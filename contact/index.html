@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <title>LuxClean - Prendre contact</title>
     <link rel="stylesheet" href="/public.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
     <script src="https://unpkg.com/swup@latest"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://unpkg.com/@swup/progress-plugin@3"></script>
     <meta name="description" content="Découvrez LuxClean : Le luxe du nettoyage sur mesure. Ancien gouvernant général d'hôtels de luxe, nous mettons toute notre expertise à votre service pour un nettoyage impeccable. Contactez-nous dès maintenant pour révéler l'éclat caché de votre demeure !">
     <meta property="og:title" content="LuxClean : Le luxe du nettoyage sur mesure">
     <meta property="og:description" content="Découvrez LuxClean : Le luxe du nettoyage sur mesure. Ancien gouvernant général d'hôtels de luxe, nous mettons toute notre expertise à votre service pour un nettoyage impeccable. Contactez-nous dès maintenant pour révéler l'éclat caché de votre demeure !">
@@ -18,7 +16,8 @@
 <body>
     <nav>
         <ul>
-          <li><a href="/">LuxClean</a></li>
+          <li><a href="../">LuxClean</a></li>
+          <li><a href="https://google.com">Googles</a></li>
         </ul>
     </nav>
 
@@ -27,7 +26,9 @@
     </main>
 
     <script>
-        const swup = new Swup();
+        const swup = new Swup({
+            linkSelector: 'a[href^="/"]',
+        });
     </script>
 </body>
 </html>
